@@ -18,7 +18,7 @@ println(_abc)
 
 α = 12  # \alpha TAB
 β = 23  # \beta TAB
-α * β
+α * β 
 
 β₀ = 3   # \beta TAB \_0 TAB
 β₁ = 4   # \beta TAB \_1 TAB
@@ -34,6 +34,8 @@ println(_abc)
 π = 45
 
 ℯ   # \euler TAB
+
+ℯ
 
 # This is a one line comment
 
@@ -63,6 +65,7 @@ a = c
 text::String = "Julia Language"
 
 area(height::Float64, width::Float64) = height * width
+area(5.3 , 6.5)
 
 (7 + 8)::Int
 (π+ℯ)::Float64

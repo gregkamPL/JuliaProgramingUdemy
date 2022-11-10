@@ -43,8 +43,10 @@ typeof(3.14)
 Float32(3.14)
 
 α = 235.12
+typeof(α)
 sizeof(α)
 β = Float32(α)
+typeof(β)
 sizeof(β)
 
 x = 5_000_000
@@ -52,7 +54,9 @@ y = 20_000_000
 y - x
 
 Inf
+typeof(Inf)
 -Inf
+typeof(-Inf)
 Inf16
 Inf32
 
@@ -71,7 +75,7 @@ isinf(x/y)
 isnan(y/z)
 
 
-eps()
+eps() #minimum increment in numbers
 eps(Float32)
 eps(Float16)
 
@@ -86,3 +90,6 @@ Bool(0)
 
 true == 1
 false == 0
+
+0^0
+2^2
