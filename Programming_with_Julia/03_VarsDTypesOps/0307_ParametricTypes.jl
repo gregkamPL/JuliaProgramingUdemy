@@ -1,9 +1,11 @@
-struct Rectangle
+#types can take parameters
+
+struct Rectangle3
     width::Float64
     heigt::Float64
 end
 
-struct ParRectangle{T}
+struct ParRectangle{T}  #parameters are provided in {}
     width::T
     height::T
 end
@@ -16,6 +18,7 @@ typeof(r1)
 typeof(r2)
 typeof(r3)
 
+# ParRectangle{Float64} is subtype of ParRectangle
 ParRectangle{Float64} <: ParRectangle
 
 r4 = ParRectangle(3, 4)
@@ -29,6 +32,7 @@ end
 
 r4 = NumRectangle{String}("three", "five")
 
+#parametric abstact type
 abstract type Color{T} end
 
 Color{Float64} <: Color
@@ -36,6 +40,7 @@ Color{String} <: Color
 
 Color{Int64} <: Color{<:Integer}
 
+#parametric abstact type
 abstract type NewColor{T<:Real} end
 
 struct Rational{T<:Integer} <: Real
@@ -56,3 +61,4 @@ end
 rect = NewShape("Rectangle", "Red", 5.5, 7.5)
 
 circle = NewShape("Circle", "Black", 3, 4.5)
+

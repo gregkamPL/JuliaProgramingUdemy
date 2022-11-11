@@ -22,9 +22,13 @@ str[begin]
 str[end]
 
 str[end-1]
-str[end÷2]
+str[end÷2]  #getting element in the middle
 
 str[3:5]
+str[1:5:2]
+"ABCDEFGHIJKLMN"[1:3:10] #starting from 1 and then by every 1+3 position till 10
+
+
 str[end-4:end]
 firstindex(str)
 lastindex(str)
@@ -42,7 +46,7 @@ newstr[3]
 c = "∞ α a Σ"
 lastindex(c)
 length(c)
-ncodeunits('→')
+ncodeunits('→')  #number of code units
 
 ncodeunits('∫')
 sizeof('∫')
@@ -56,5 +60,6 @@ str1 * " " * str2
 
 x = 4
 y = 5
-"First number is $x, and second number is $y and their sum is $(x+y)."
+"First number is $x, and second number is $y and their sum is $(x+y)."  # $ allows for interpolation
+
 

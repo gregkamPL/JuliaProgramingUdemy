@@ -3,6 +3,7 @@
 3.14 * 2.78
 67 / 13
 
+#last evalulated value
 ans
 ans^2
 
@@ -18,8 +19,12 @@ y = 23
 # ÷  # \div TAB
 15 ÷ 6
 6.5 ÷ 2
+6.5 ÷ 2
+Float64(6.5 ÷ 2)
 
 div(15, 6)
+div(6.5, 2)
+
 div(6.5, 2)
 
 4 ^ 3
@@ -52,11 +57,12 @@ a ≠ b   # \ne TAB
 
 c = [1, 2, 3]
 d = c
-e = deepcopy(c)
+e = deepcopy(c) #'e' has different memory allocation than 'c'
 
 c == e
-c === e
+c === e #checking if 'c' and 'e' have the same memory allocation
 c ≡ e   # \equiv TAB
+c ≡ d   # \equiv TAB
 
 a ≤ b  # \leq TAB
 a ≥ b  # \geq TAB
@@ -67,6 +73,8 @@ a ≥ b ≥ c
 (a ≥ b) && (b ≥ c)
 
 3 ≤ 3 < 9 ≠ 17 ≥ 14
+3 ≤ 3 < 9 
+17 ≥ 14
 
 0.4 + 0.2
 0.6 == 0.4 + 0.2
@@ -113,6 +121,7 @@ x /= 17   # x = x / 17
 x ^= 3    # x = x 
 
 log(ℯ^2)
+log(ℯ,2) #ln(2)
 
 log(10, 10000)
 
@@ -139,3 +148,6 @@ tand(30)
 rand(4)
 rand(Int, 4)
 rand(Float64, (2,2))
+rand(2,2)
+rand(Int64, (2,2))
+rand(Int128, (2,2))
