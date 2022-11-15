@@ -1,4 +1,4 @@
-tpl1 = (3, "Julia", 2022, 4.12)
+tpl1 = (3, "Julia", 2022, 4.12) #cannot be modified
 typeof(tpl1)
 
 tpl2 = tuple(3, "Julia", 2022, 4.12)
@@ -21,7 +21,7 @@ tpl1[1]
 tpl1[2]
 tpl1[2:3]
 
-tpl = (name="Julia", year=2012, version=1.7)
+tpl = (name="Julia", year=2012, version=1.7) #named tuple
 tpl[1]
 
 tpl.version
@@ -36,8 +36,8 @@ p
 e
 g
 
-nt = (3, 4, 5, 6)
-typeof(t)
+nt = (3, 4, 5, 6) #tuple with all elements of the same type is 'NTuple'
+typeof(nt)
 
 ntuple(x -> x^3, 5)
 
@@ -47,5 +47,5 @@ in("Python", tpl1)
 2022 ∈ tpl1
 "C++" ∈ tpl1
 
-1999 ∉ tpl1
+1999 ∉ tpl1  # \not in TAB
 2022 ∉ tpl1

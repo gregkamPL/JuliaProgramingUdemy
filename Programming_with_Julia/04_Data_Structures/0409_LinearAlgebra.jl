@@ -11,7 +11,7 @@ mat'
 mat2 = [4 2 1; 5 0 3; 3 2 1]
 mat * mat2
 
-mat .* mat2
+mat .* mat2 #element-wise multiplication
 
 x = 7.6;
 y = 1/x
@@ -28,6 +28,8 @@ invmat = inv(mat)
 
 mat * invmat
 
+invmat \ idt #--> mat
+
 A = [1 2; 2 -4]
 B = [28; -2]
 
@@ -35,3 +37,10 @@ B = [28; -2]
 X = A\B
 A*X == B
 
+
+
+X = rand(Float64, (100,3))
+y = rand(100)
+X = [ones(100) X]
+
+β = inv(X'X)X'y

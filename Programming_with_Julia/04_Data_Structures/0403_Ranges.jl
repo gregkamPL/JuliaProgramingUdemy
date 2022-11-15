@@ -1,9 +1,9 @@
 1:10
 
 rng = 1:10
-collect(rng)
-sizeof(1:10)
-sizeof(collect(1:10))
+collect(rng) #converging into vector
+sizeof(1:10) #size in bytes
+sizeof(collect(1:10)) #collect function requires more bytes
 
 typeof(rng)
 supertype(UnitRange)
@@ -26,4 +26,4 @@ range(-3, 3, length=101)
 range(1, 30, step=3)
 range(stop=20, length=10)
 range(stop=20, step=2, length=10)
-LinRange(10, 90, 100)
+LinRange(10, 90, 100)  #linearly equal spacing
